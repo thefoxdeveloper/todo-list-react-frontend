@@ -1,0 +1,173 @@
+li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  align-items: center;
+}
+.editTask {
+  width: 50%;
+  padding: 1.08rem 1rem;
+  border: 1.5px var(--gray-700) solid;
+  color: var(--gray-100);
+  border-radius: 8px;
+  background: var(--gray-500);
+  font-size: 1rem;
+}
+.editTask:focus {
+  outline: none;
+  border: 1.5px solid var(--purple-dark);
+  color: var(--gray-100);
+}
+.editTask::placeholder {
+  color: var(--gray-300);
+  font-size: 1rem;
+}
+.save {
+  max-width: 90px;
+  width: 100%;
+  padding: 1.08rem 1rem;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border: 0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 200ms background-color;
+}
+
+.save:hover {
+  background: var(--blue);
+}
+
+.checkboxContainer {
+  width: 2rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+
+.checkboxTask {
+  display: block;
+  margin-top: 3px;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+
+  transition: background-color 100ms;
+}
+
+.checkmark {
+  color: var(--gray-500);
+}
+
+.checkmark svg {
+  width: 0.9rem;
+}
+
+.checkboxTask:hover {
+  background: var(--blue-dark);
+  border: 2px solid var(--blue-dark);
+  color: var(--gray-300);
+}
+
+.checkboxTask input {
+  display: none;
+}
+
+.taskTitle {
+  padding-left: 1rem;
+}
+
+.taskTitle p {
+  color: var(--gray-100);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+button.deleteTask {
+  background: transparent;
+  margin-top: -0.2rem;
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+button.deleteTask svg {
+  color: var(--gray-300);
+  padding-top: 2px;
+
+  transition: 200ms color;
+}
+
+button.deleteTask:hover {
+  background: var(--gray-400);
+  border-radius: 5px;
+  color: var(--red-danger);
+}
+
+button.deleteTask svg:hover {
+  color: var(--red-danger);
+}
+
+/* Estilos para os checkbox marcados*/
+
+.checkboxTaskChecked {
+  display: block;
+  margin-top: 3px;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 0;
+  background: var(--purple-dark);
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+
+  transition: background-color 100ms;
+}
+
+.checkmarkChecked {
+  color: var(--gray-500);
+}
+
+.checkmarkChecked svg {
+  width: 0.9rem;
+  color: var(--gray-100);
+  padding: 1px;
+}
+
+.checkboxTaskChecked:hover {
+  background: var(--purple);
+  color: var(--gray-300);
+}
+
+.checkboxTaskChecked input {
+  display: none;
+}
+
+.taskTitleChecked {
+  padding-left: 1rem;
+}
+
+.taskTitleChecked p {
+  color: var(--gray-100);
+  opacity: 0.4;
+  text-decoration: line-through;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
